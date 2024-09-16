@@ -2,25 +2,25 @@ package homework;
 
 public class Homework10 {
     public static void main(String[] args) {
-        int[] arr1 = {10, 12, 45, 90};
-        int[] arr2 = new int[arr1.length + 1];
-        for (int i = 0; i < arr1.length; i++){
-            arr2[i] = arr1[i];
+        int[] arr = {10, 12, 45, 90};
+        int[] arrNew = new int[arr.length + 1];
+        for (int i = 0; i < arr.length; i++){
+            arrNew[i] = arr[i];
         }
         int addNum = 23;
-        arr2[arr2.length - 1] = addNum;
-        arr1 = arr2;
-        for (int i = 0; i < arr1.length - 1; i++){
-            for (int j = 0; j < arr1.length - i - 1; j++){
-                if (arr1[j] > arr1[j + 1]){
-                    int temp = arr1[j];
-                    arr1[j] = arr1[j + 1];
-                    arr1[j + 1] = temp;
+        arrNew[arrNew.length - 1] = addNum;
+        arr = arrNew;
+        for (int i = 0; i < arr.length - 1; i++){
+            for (int j = 0; j < arr.length - i - 1; j++){
+                if (arr[j] > arr[j + 1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
-        for (int i = 0; i < arr1.length; i++){
-            System.out.print(arr1[i] + " ");
+        for (int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
         }
     }
 }
