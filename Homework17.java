@@ -16,8 +16,8 @@ class A01 {
 
 public class Homework17 {
     public static void main(String[] args) {
-        A01 max = new A01();
+        A01 a01 = new A01();
         double[] arr = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6};
-        System.out.println("该数组的最大值为：" + max.max(arr));
+        System.out.println("该数组的最大值为：" + a01.max(arr));
     }
 }
